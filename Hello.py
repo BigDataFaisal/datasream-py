@@ -50,6 +50,18 @@ st.title('Wastewater Impact Dashboard')
 st.markdown("""
 This dashboard visualizes the impacts of wastewater discharges on both the environment and public health. It explores correlations and provides interactive data insights.
 """)
+# ------------------------------------------------------------------------------------------------
+# OBJECTIVES SECTION
+# ------------------------------------------------------------------------------------------------
+
+st.header('Dashboard Objectives')
+st.markdown("""
+- **Evaluate Environmental Impacts**: Analyze how different levels and types of wastewater discharges affect environmental health, focusing on water quality, biodiversity, and ecosystem sustainability.
+- **Assess Public Health Outcomes**: Investigate the correlation between wastewater management practices and public health metrics, particularly the incidence of waterborne diseases and overall community health.
+- **Promote Sustainable Practices**: Highlight the effectiveness of various wastewater treatment technologies and management strategies, encouraging the adoption of best practices that enhance sustainability and efficiency.
+- **Facilitate Policy Development**: Provide data-driven insights to support the formulation and implementation of policies aimed at improving wastewater management frameworks at local, national, and international levels.
+- **improve Community Engagement**: Encourage active participation by providing interactive tools that allow users to see the direct impact of different wastewater management scenarios.
+""")
 
 # ------------------------------------------------------------------------------------------------
 # INTERACTIVE SIDEBAR FOR FILTERING DATA
@@ -111,7 +123,6 @@ with col2:
 # PIE CHART FOR HEALTH IMPACT DISTRIBUTION
 # ------------------------------------------------------------------------------------------------
 
-st.subheader("Health Impact Distribution")
 pie_data = filtered_data['Health_Impact'].value_counts()
 
 st.subheader("Health Impact Distribution")
