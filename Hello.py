@@ -98,6 +98,8 @@ if not filtered_data.empty:
 else:
     st.error("No data available for the selected year range and filters.")
 
+# Debuging output to display filtered data
+st.write("Filtered data:", filtered_data.head())
 # ------------------------------------------------------------------------------------------------
 # DETAILED IMPACT ANALYSIS SECTION
 # ------------------------------------------------------------------------------------------------
